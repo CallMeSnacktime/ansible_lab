@@ -1,7 +1,7 @@
-192.168.1.167 ansible_user=atiba
-192.168.1.170 ansible_user=atiba
-192.168.1.171 ansible_user=atiba
+192.168.1.167 ansible_user=atiba ansible_python_interpreter=/usr/bin/python3.12
+192.168.1.170 ansible_user=atiba ansible_python_interpreter=/usr/bin/python3.12
+192.168.1.171 ansible_user=atiba ansible_python_interpreter=/usr/bin/python3.12
 
-10.174.167.173 ansible_user=ubuntu
-10.174.167.39 ansible_user=ubuntu
-10.174.167.87 ansible_user=ubuntu
+10.174.167.173 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12
+10.174.167.39 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12
+10.174.167.87 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12
