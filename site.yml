@@ -4,12 +4,14 @@
   become: true
   pre_tasks:
   - name: install updates (RHEL)
+    tags: always
     dnf:
       update_only: yes
       update_cache: yes
     when: ansible_distribution == "RedHat"
 
   - name: install update (Ubuntu)
+    tags: always
     apt:
       upgrade: dist
       update_cache: yes
@@ -20,6 +22,7 @@
   tasks:
 
   - name: install apache and php on Ubuntu servers
+    tags: apache,apache2,ubuntu
     apt:
       name:
         - apache2
@@ -28,6 +31,7 @@
     when: ansible_distribution == "Ubuntu"
 
   - name: install httpd and php on RHEL9 OS
+    tags: apache,centos,httpd
     dnf:
       name:
         - httpd
@@ -39,6 +43,7 @@
   become: true
   tasks:
   - name: install mariadb package (RHEL)
+    tags: centos,db,maria
     dnf:
       name:
         - mariadb
@@ -46,6 +51,7 @@
     when: ansible_distribution == "RedHat"
 
   - name: install mariadb package (Ubuntu)
+    tags: db,mariadb,ubuntu
     apt:
       name:
         - mariadb-server
@@ -56,6 +62,7 @@
   become: true
   tasks:
   - name: install samba package
+    tags: samba
     package:
       name: samba
       state: latest
