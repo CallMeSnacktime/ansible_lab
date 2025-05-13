@@ -7,6 +7,9 @@
 192.168.1.173 ansible_user=atiba ansible_python_interpreter=/usr/bin/python3.9 apache_package=httpd php_package=php
 
 [file_servers]
-10.174.167.173 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12 apache_package=apache2 php_package=libapache2-mod-php
 10.174.167.39 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12 apache_package=apache2 php_package=libapache2-mod-php
 10.174.167.87 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12 apache_package=apache2 php_package=libapache2-mod-php
+
+[workstations]
+10.174.167.173 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3.12 apache_package=apache2 php_package=libapache2-mod-php
+
